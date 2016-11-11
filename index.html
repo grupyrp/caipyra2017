@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caipyra 2017</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+  <style>
+    html {
+      height: 100%;
+      font-family: 'Patua One', cursive;
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: url(bg.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .caipyra {
+      color: white;
+      font-size: 8em;
+      text-align: center;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+    }
+
+    .caipyra span { color: #ffd800; }
+    .caipyra img {
+      filter: brightness(0) opacity(.6);
+      width: 100px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .caipyra { font-size: 4em; }
+      .caipyra img { max-width: 60px; }
+      .background {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class='caipyra'>
+    CAI<span>PY</span>RA
+    <br/>
+    2017
+    <br/>
+    <img src="python.png" alt="">
+  </div>
+
+</body>
+</html>

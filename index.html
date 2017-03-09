@@ -1,64 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Caipyra 2017</title>
+  <title>Caipyra 2017 - O único evento de Python com Quentão e Paçoquinha!</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
 
-  <style>
-    html {
-      height: 100%;
-      font-family: 'Patua One', cursive;
-    }
-
-    body {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background: url(bg.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .caipyra {
-      color: white;
-      font-size: 8em;
-      text-align: center;
-      text-shadow: 3px 3px 10px rgba(0, 0, 0, .3);
-    }
-
-    .caipyra span { color: #ffd800; }
-    .caipyra img {
-      filter: brightness(0) opacity(.6);
-      width: 100px;
-    }
-
-    @media only screen and (max-width: 767px) {
-      .caipyra { font-size: 4em; }
-      .caipyra img { max-width: 60px; }
-      .background {
-        width: auto;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600i|Roboto:500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/main.min.css">
+  <link rel="stylesheet" href="http://2016.caipyra.python.org.br/css/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-  <div class='caipyra'>
-    CAI<span>PY</span>RA
-    <br/>
-    2017
-    <br/>
-    <img src="python.png" alt="">
-  </div>
+  <main id="caipyra">
+    <img src="http://2016.caipyra.python.org.br/img/caipyra_logo_2016.png" alt="eee">
+    <h2>O único evento de Python com Quentão e Paçoquinha!</h2>
+    <h4>De 23 à 27 de junho em Ribeirão Preto</h4>
+  </main>
 
+  <section id="coc" class="shortcall">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12 col-sm-4 col-md-2">
+          <a href="https://github.com/pythonbrasil/codigo-de-conduta">Código de Conduta</a>
+          <a target="" href="http://2016.caipyra.python.org.br/">Site 2016</a>
+        </div>
+        <div class="col col-xs-12 col-sm-8 col-md-10">
+          <p>
+            O Caipyra é um evento inspirado na <b>Python Brasil</b> (maior evento Python da América Latina) e visa, sem
+            fins lucrativos, disseminar conhecimento sobre diversas áreas da tecnologia.
+          </p>
+          <p>
+            Como o próprio nome já diz, somos um evento <b>focado em Python</b>, porém aberto
+            a diversas tecnologias que são trazidas e abordadas pelos nossos ilustres convidados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tutorial">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12 col-sm-offset-6 col-sm-6">
+          <h3>Django Girls <small>23/06</small></h3>
+            <p>
+              <b>Django Girls</b> é uma iniciativa internacional que busca aumentar a diversidade no mundo da tecnologia ensinando mulheres programação num workshop de um dia.
+            </p>
+            <p>
+              Neste workshop, uma turma de 30 mulheres com ajuda de suas treinadoras irão aprender a construir e fazer o deploy de uma aplicação web usando HTML, CSS, Python e Django.
+            </p>
+            <br>
+            <!-- <a href="">Inscrições aqui</a> *em breve -->
+            <a href="https://djangogirls.org/" target="_blank">Sobre o Django Girls</a>
+  
+        </div>
+      </div>
+    </div>
+    <div class="maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1860.3142939588854!2d-47.8516093!3d-21.1671742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xefcc4fc659398430!2sUSP+-+Centro+de+Tecnologia+da+Informa%C3%A7%C3%A3o+de+Ribeir%C3%A3o+Preto!5e0!3m2!1spt-PT!2sbr!4v1486685649288" width="600" height="450" frameborder="0" style="border:0;pointer-events:none" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="section" id="talks">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12 col-sm-6">
+          <h3>Palestras <small>24/06 e 25/06</small></h3>
+            <p>
+              Nos dias 24 e 25 de junho acontecerão as palestras do <b>Caipyra 2017</b>.
+            </p>
+            <p>
+              Já temos alguns palestrantes convidados com presenças confirmadas:
+              <b>Annanda Sousa</b>, <b>Daniela Viera</b> e <b>Henrique Bastos</b>.
+            </p>
+            <p>
+              E como o evento é feito para a comunidade Python o <b>Caipyra</b> abrirá
+              espaço para qualquer pessoa submeter sua palestra para uma votação aberta
+              pelo SpeakerFight.
+            </p>
+            <p>
+              Além das palestras tradicionais, durante o evento irão ocorrer <b>Lightning talks</b>,
+              onde qualquer pessoa presente pode fazer uma apresentação curta, de 5 minutos,
+              sobre o tema que quiser: desde um projeto até uma rima, nesses 5 minutos só
+              não vale quebrar o código de conduta.
+            </p>
+            <br>
+            <a target="_blank" href="http://speakerfight.com/events/caipyra-2017/">SpeakerFight</a>
+        </div>
+      </div>
+    </div>
+    <div class="maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.590191278791!2d-47.78511528451129!3d-21.208432685901265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f11c7e7beeb09b4!2zRXN0w6FjaW8!5e0!3m2!1spt-PT!2sbr!4v1486684435404" frameborder="0" style="border:0;pointer-events:none" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!--
+  <section class="section" id="sprints">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12">
+          <h3>Sprints <small>26/06 e 27/06</small></h3>
+        </div>
+      </div>
+    </div>
+    <div class="maps">
+      <div class="maps-placeholder">
+          <span>Local a definir</span>
+      </div>
+    </div>
+  </section>
+  -->
+  <section id="tickets" class="shortcall">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12 col-sm-8">
+  
+        </div>
+        <div class="col col-xs-12">
+  
+          <h4>Garanta já seu ingresso</h4>
+            <p>
+              Então separe sua camisa xadrez e sua calça rasgada, tire o chapéu de palha do armário, e prepare-se para muito python e paçoquinha.
+            </p>
+          </div>
+        </div>
+        <div style="width:100%; text-align:left;"><iframe src="//eventbrite.com.br/tickets-external?eid=32504271150&ref=etckt" frameborder="0" height="400pxmin-height:400px;" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;" >
+      </div>
+    </div>
+  </section>
+
+  <section id="organization">
+    <div class="container">
+      <div class="row">
+        <h3>Organizadores</h3>
+      </div>
+      <div class="row">
+        <div class="col col-xs-12 col-sm-4">
+          <h4>José Guilherme Tavares</h4>
+          <h4>Danilo Martins</h4>
+          <h4>Danilo Shiga</h4>
+          <h4>Guilherme Diego</h4>
+        </div>
+        <div class="col col-xs-12 col-sm-4">
+          <h4>Jessica Temporal</h4>
+          <h4>Leonardo Berdu</h4>
+          <h4>José Costa Martins</h4>
+          <h4>Júlia Carmona</h4>
+        </div>
+        <div class="col col-xs-12 col-sm-4">
+          <h4>Marco Rougeth</h4>
+          <h4>Sérgio Oliveira</h4>
+          <h4>Letícia Portella</h4>
+          <h4>Paula Santos</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsors">
+    <div class="container">
+      <div class="row">
+        <h3>Patrocinadores</h3>
+        <p>
+        	<img src="https://wiki.python.org/psf/PSF%20Logos?action=AttachFile&do=get&target=psf-logo-372x84-alpha.png">	
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col col-xs-12 col-md-4">
+          <br>
+        
+          <p>
+            <a href="https://github.com/grupyrp"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+          </p>
+           
+           <p>
+            <a href="https://www.facebook.com/grupyrp"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+           </p>
+
+           <p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0285nNhhXwEzZ1XBS4veUotJo23inIccCq-UuaCpJOlpURA/viewform?usp=sf_link"><i class="fa fa-envelope" aria-hidden="true"></i> Fale Conosco</a>
+          </p>
+          
+        </div>
+        <div class="col col-xs-12 col-md-4">
+          <br>
+        
+          <p>
+            <a target="_blank" href="https://github.com/pythonbrasil/codigo-de-conduta#readme"><i class="fa fa-file-text" aria-hidden="true"></i> CDC</a>
+          </p>
+           
+           <p>
+            <a href="https://www.eventbrite.com.br/e/caipyra-2017-tickets-32504271150"><i class="fa fa-ticket" aria-hidden="true"></i> Ingressos</a>
+           </p>
+
+           <p>
+            <a target="_blank" href="https://www.youtube.com/watch?v=-FDJjk-suAg&list=PLBjt_SB_zYpEQrxVKl3GYYKyl_qc8vR58"><i class="fa fa-youtube" aria-hidden="true"></i> Palestras</a>
+          </p>
+        </div>
+        <div class="col col-xs-12 col-md-4">
+          <span class='footer-image'>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <span class="below"><i class="fa fa-slack" aria-hidden="true"></i> Grupo de Usuários Python de Ribeirão Preto (GrUPy-RP) 2017</span>
+      </div>
+    </div>
+  </footer>
+  <script src="static/js/main.min.js"></script>
 </body>
 </html>

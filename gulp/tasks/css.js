@@ -6,3 +6,11 @@ gulp.task("css", () => {
                 .pipe($.rename('main.min.css'))
                 .pipe(gulp.dest(CONFIG.DIST.CSS))
 })
+gulp.task("mobile_css", () => {
+    return gulp.src(CONFIG.SRC.MOBILECSS)
+                .pipe($.sass())
+                .pipe($.autoprefixer())
+                .pipe($.cssnano())
+                .pipe($.rename('mobile.min.css'))
+                .pipe(gulp.dest(CONFIG.DIST.MOBILECSS))
+})

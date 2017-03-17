@@ -4,12 +4,14 @@ const distPath = (r) => process.cwd() + "/static/" + r;
 module.exports = {
     SRC: {
         CSS: srcPath('sass/main.sass'),
+        MOBILECSS: srcPath('sass/mobile.sass'),
         JS: srcPath('js/main.js'),
         IMG: srcPath('images/**/*'),
         PAGE: srcPath('templates/index.hbs')
     },
     DIST: {
         CSS: distPath('css/'),
+        MOBILECSS: distPath('css/'),
         JS: distPath('js/'),
         IMG: distPath('images/'),
         PAGE: process.cwd()

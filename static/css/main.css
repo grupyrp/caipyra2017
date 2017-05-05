@@ -1,0 +1,583 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Caipyra's classes
+   ========================================================================== */
+
+/*
+ * Base text colors
+ */
+
+.color-white { color: #fff; }
+.color-blue { color: #0d78d0; }
+.color-darkblue { color: #2a3890; }
+.color-grey { color: #727272; }
+
+/*
+ * Background colors
+ */
+
+.bg-white { background-color: #ffffff }
+.bg-blue { background-color: #108aee }
+.bg-grey { background-color: #f8f8fa }
+.bg-yellow { background-color: #f8f8fa }
+
+/*
+ * Font sizes
+ */
+
+.f-40 { font-size: 40px; }
+.f-20 { font-size: 20px; line-height: 16px; }
+.f-18 { font-size: 18px; }
+.f-14 { font-size: 14px; }
+.f-12 { font-size: 14px; }
+
+/*
+ * Margins
+ */
+.m-t-20 { margin-top: 20px; }
+.m-b-20 { margin-bottom: 20px; }
+
+/*
+ * Common classes
+ */
+
+.btn-flat {
+    border-radius: 6px;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+.btn-flat.btn-white {
+    background-color: #fff;
+    color: #907c12;
+}
+
+.btn-outline {
+    border-radius: 6px;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.btn-outline.btn-ocre {
+    border-color: #907c12;
+    color: #907c12;
+}
+
+.btn-outline.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .btn-flat {
+        display: block;
+    }
+}
+
+/*
+ * HTML elements
+ */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+h1 {
+    width: 411px;
+    height: 307px;
+    text-indent: -9999px;
+    background: url('../img/caipyra_logo.png') no-repeat;
+    overflow: hidden;
+    float: right;
+    margin-right: 70px;
+    margin-top: -102px;
+}
+
+h2 {
+    font-weight: 600;
+    line-height: 40px;
+    white-space: nowrap;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 30px 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        display: block;
+    }
+}
+
+.sub-title::before {
+    content: '— ';
+    color: #20276c;
+    font-weight: 500;
+}
+
+.map-pin:first-of-type + a {
+    vertical-align: middle;
+    margin-left: 4px;
+    font-weight: 600; 
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    padding: 2px 4px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: 6px;
+}
+
+.tag.orange {
+    background-color: #ff8400;
+    color: #fff;
+}
+
+/*
+ * Header
+ */
+
+.header {
+    display: table;
+    height: 540px;
+    width: 100%;
+    padding: 0;
+}
+
+.header.wrapper {
+    padding: 0;
+    width: 100%;
+    max-width: none;
+
+}
+
+.header > aside {
+    height: 540px;
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.header .left-box {
+    background: #1e2868 url('../img/carousel/caipyra1.jpg') top right no-repeat;
+}
+
+.header .right-box {
+    background-color: #ebcf3a;
+}
+
+.header .right-box > div {
+    margin-left: 70px;
+    width: 436px;
+}
+
+.header .right-box hr {
+    background-color: #fff;
+    border: none;
+    height: 2px;
+}
+
+.header .right-box .btn-flat,
+.header .right-box .btn-btn-outline {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        display: block;
+    }
+
+    .header > aside {
+        display: inline-block;
+        width: 100%;
+        height: 420px;
+        vertical-align: baseline;
+        float: left;
+    }
+
+    h1 {
+        float: none;
+        margin: 50px auto 0 auto;
+    }
+
+    h2 {
+        
+        white-space: wrap;
+    } 
+
+    .header .right-box > div {
+        width: auto;
+        margin: 0 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+     h1 {
+        width: 280px;
+        height: 209px;
+        background-size: 280px 209px;
+        margin: 100px auto 0 auto;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+}
+
+/*
+ * Infos
+ */
+
+.infos {
+    background-color: #108aee;
+    clear: both;
+}
+
+.infos .wrapper {
+    display: table;
+}
+
+.infos .left-box,
+.infos .right-box {
+    display: table-cell;
+    width: 50%;
+    padding: 0 16px;
+}
+
+.infos .btn-outline {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .infos {
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    .infos .left-box,
+    .infos .right-box {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .infos .left-box {
+        margin-bottom: 60px;
+    }
+
+    .infos .btn-outline {
+        display: block;
+        width: 60%;
+        margin: 10px auto 0;
+    }
+
+}
+
+/*
+ * Speakers
+ */
+
+.speakers ul {
+    padding: .5vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap; 
+    flex-flow: row wrap; 
+    display: -webkit-box;
+    display: flex;
+}
+
+.speakers li {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto; 
+    width: 200px; 
+    margin: .5vw;
+    background-color: #e8e8e8;
+}
+
+.speakers img {
+    width: 100%; 
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .speakers {
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .speakers ul { padding: 0; }
+  .speakers li { margin: 0; }
+}
+
+/*
+ * Agenda
+ */
+
+.agenda .wrapper {
+    display: table;
+}
+
+.agenda {
+    background-color: #108aee;
+}
+
+.agenda .left-box,
+.agenda .right-box {
+    display: table-cell;
+    width: 50%;
+    padding: 0 16px;
+    position: relative;
+    vertical-align: top;
+}
+
+.agenda .left-box > p ,
+.agenda .right-box > p {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.agenda ul {
+    padding: 20px 0 0;
+    margin: 0;
+    list-style: none;
+}
+
+.agenda li {
+    overflow: hidden;
+    display: table;
+    margin-bottom: 20px;
+}
+
+.agenda li > div {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.agenda li > div:last-child {
+    padding-left: 10px;
+}
+
+.agenda li p {
+    margin: 0;
+    line-height: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .agenda .left-box > p ,
+    .agenda .right-box > p {
+        position: relative;
+        right: 10px;
+        font-size: 14px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   Media support
+   ========================================================================== */
+
+

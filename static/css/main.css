@@ -446,24 +446,37 @@ h3 {
     height: auto;
 }
 
-.speakers h4 {
+.speakers ul li > div {
     position: absolute;
-    bottom: -200px;
+    bottom: -82%;
     z-index: 2;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
     color: #fff;
     width: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 10px;
     box-sizing: border-box;
     -webkit-transition: bottom .3s ease-in-out;
     transition: bottom .3s ease-in-out;
+    padding: 10px;
 }
 
-.speakers li:hover h4 {
-    bottom: -19px;
+.speakers h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.speakers ul li > div p {
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.speakers ul li > div a {
+    color: #fff;
+} 
+
+.speakers li:hover div {
+    bottom: 0px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -471,8 +484,8 @@ h3 {
         clear: both;
     }
 
-    .speakers h4 {
-        bottom: -344px;
+    .speakers ul li > div {
+        bottom: -90%;
     }
 }
 
@@ -536,6 +549,10 @@ h3 {
 }
 
 @media screen and (max-width: 1000px) {
+    .agenda .left-box,
+    .agenda .right-box {
+        display: block;
+    }
     .agenda .left-box > p ,
     .agenda .right-box > p {
         position: relative;

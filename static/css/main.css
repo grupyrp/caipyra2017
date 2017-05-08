@@ -448,7 +448,7 @@ h3 {
 
 .speakers ul li > div {
     position: absolute;
-    bottom: -180px;
+    bottom: -82%;
     z-index: 2;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
@@ -484,8 +484,8 @@ h3 {
         clear: both;
     }
 
-    .speakers h4 {
-        bottom: -344px;
+    .speakers ul li > div {
+        bottom: -90%;
     }
 }
 
@@ -549,6 +549,10 @@ h3 {
 }
 
 @media screen and (max-width: 1000px) {
+    .agenda .left-box,
+    .agenda .right-box {
+        display: block;
+    }
     .agenda .left-box > p ,
     .agenda .right-box > p {
         position: relative;

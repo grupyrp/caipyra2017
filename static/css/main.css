@@ -517,9 +517,7 @@ h3 {
 
 .agenda .left-box > p ,
 .agenda .right-box > p {
-    position: absolute;
-    top: 0;
-    right: 10px;
+    margin-top: 30px;
 }
 
 .agenda ul {
@@ -557,7 +555,6 @@ h3 {
     .agenda .right-box > p {
         position: relative;
         right: 10px;
-        font-size: 14px;
     }
 }
 

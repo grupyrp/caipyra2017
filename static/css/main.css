@@ -154,7 +154,20 @@ textarea {
 .btn-flat.btn-white:hover {
     background-color: #0d78d0;
     color: #fff;
-} 
+}
+
+.btn-flat.btn-blue {
+    background-color: #0d78d0;
+    color: #fff;
+    -webkit-transition: background-color .5s, color .5s ease-in-out;
+    transition: background-color .5s, color .5s ease-in-out;
+}
+
+
+.btn-flat.btn-blue:hover {
+    background-color: #0d5bd0;
+    color: #fff;
+}
 
 .btn-outline {
     border-radius: 6px;
@@ -252,7 +265,7 @@ h3 {
 .map-pin:first-of-type + a {
     vertical-align: middle;
     margin-left: 4px;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .map-pin:first-of-type + a:hover {
@@ -342,9 +355,9 @@ h3 {
     }
 
     h2 {
-        
+
         white-space: wrap;
-    } 
+    }
 
     .header .right-box > div {
         width: auto;
@@ -424,8 +437,8 @@ h3 {
     display: -ms-flexbox;
     -ms-flex-wrap: wrap;
     -ms-flex-direction: column;
-    -webkit-flex-flow: row wrap; 
-    flex-flow: row wrap; 
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     display: -webkit-box;
     display: flex;
 }
@@ -433,8 +446,8 @@ h3 {
 .speakers li {
     -webkit-box-flex: auto;
     -ms-flex: auto;
-    flex: auto; 
-    width: 200px; 
+    flex: auto;
+    width: 200px;
     margin: .5vw;
     background-color: #e8e8e8;
     position: relative;
@@ -442,7 +455,7 @@ h3 {
 }
 
 .speakers img {
-    width: 100%; 
+    width: 100%;
     height: auto;
 }
 
@@ -473,7 +486,7 @@ h3 {
 
 .speakers ul li > div a {
     color: #fff;
-} 
+}
 
 .speakers li:hover div {
     bottom: 0px;
@@ -492,6 +505,49 @@ h3 {
 @media screen and (max-width: 400px) {
   .speakers ul { padding: 0; }
   .speakers li { margin: 0; }
+}
+
+/*
+ * Tutorials
+ */
+
+.tutorials ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+
+.tutorials ul li {
+  display: table-cell;
+  width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.tutorials img {
+  max-width: 100px;
+  filter: grayscale(100%);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.tutorials h4 {
+  display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+  .tutorials ul {
+    display: block;
+  }
+
+  .tutorials ul li {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 /*
@@ -568,8 +624,8 @@ h3 {
     display: -ms-flexbox;
     -ms-flex-wrap: wrap;
     -ms-flex-direction: column;
-    -webkit-flex-flow: row wrap; 
-    flex-flow: row wrap; 
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     display: -webkit-box;
     display: flex;
     align-items: center;
@@ -578,8 +634,8 @@ h3 {
 .sponsors li {
     -webkit-box-flex: auto;
     -ms-flex: auto;
-    flex: auto; 
-    width: 360px; 
+    flex: auto;
+    width: 360px;
     margin: .5vw;
     margin-bottom: 30px;
     position: relative;
@@ -707,5 +763,3 @@ footer {
 /* ==========================================================================
    Media support
    ========================================================================== */
-
-

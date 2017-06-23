@@ -529,7 +529,6 @@ h3 {
 
 .tutorials img {
   max-width: 100px;
-  filter: grayscale(100%);
   display: inline-block;
   margin-right: 10px;
 }
